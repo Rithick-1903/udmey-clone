@@ -58,6 +58,10 @@ body {
     align-items: center;
 }
 
+.navbar__s4 {
+    display: none;
+}
+
 .learning {
     position: relative;
     cursor: pointer;
@@ -76,7 +80,8 @@ body {
     border-radius: 10px;
     display: none;
 }
-.learning:hover .learning_popup{
+
+.learning:hover .learning_popup {
     display: block;
 }
 
@@ -96,7 +101,8 @@ body {
     align-items: center;
     border: #892DE1 solid 1px;
 }
-.Catogries p:hover{
+
+.Catogries p:hover {
     background-color: white;
     border: #892DE1 solid 1px;
     color: black;
@@ -129,22 +135,19 @@ body {
     opacity: 0;
     animation-fill-mode: forwards;
 }
-@keyframes zoom{
-    0%{
+
+@keyframes zoom {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
 
-@media(max-width:769px) {
-    .sale__image-offer {
-        display: none;
-    }
-}
 
 .button {
     display: flex;
@@ -193,12 +196,16 @@ body {
 }
 
 .course__card {
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 15%;
+    margin: 5px;
+
 }
 
 .course__card img {
-    height: 190px;
     width: 100%;
+    height: 60%;
+
 }
 
 .Topics {
@@ -235,13 +242,17 @@ body {
 }
 
 .popular-card {
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 
 }
 
 .popular-card img {
-    width: 100%;
-    height: 190px;
+    width: 106%;
+    height: 65%;
+
+
 }
 
 .Fotter {
@@ -264,4 +275,58 @@ body {
 
 .Fotter-one p {
     padding: 7px;
+}
+
+/*media Queries*/
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 10px;
+    }
+
+    .Catogries {
+        display: none;
+    }
+
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+
+    .course__card {
+        flex-basis: 40%;
+
+    }
+
+    .popular-card {
+        flex-basis: 45%;
+
+    }
+
+    .navbar__s4 {
+        display: block;
+    }
+
+    .button1 {
+        font-size: 6px;
+        padding: 5px;
+    }
+
+    .button2 {
+        font-size: 5px;
+        padding: 8px;
+    }
+
+    .sale__image-offer {
+        height: 65px;
+        font-size: 8px;
+        padding: 6px;
+        width: 150px;
+
+    }
 }
