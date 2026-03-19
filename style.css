@@ -276,6 +276,10 @@ body {
     body {
         font-size: 10px;
     }
+     .sale__image-offer {
+        display: none;
+        
+    }
 
     .Catogries {
         display: none;
@@ -291,7 +295,19 @@ body {
     }
 
     .sale__image-offer {
-        display: none;
+        display: block;
+        padding: 5px;
+        height: 70px;
+        top: 20px;
+
+    }
+    .button1{
+        padding: 5px;
+        font-size: 5px;
+    }
+    .button2{
+        padding: 5px;
+        font-size: 5px;
     }
     .navbar__s4 {
         display: block;
